@@ -1,0 +1,64 @@
+@font-face{
+    font-family:'dar';
+    src:url('/fuentes/GnarlyBoneBlack_PERSONAL_USE_ONLY.otf');
+  }
+  body{
+background-image:url(jh.jpg);
+background-size:cover;
+background-attachment: fixed;
+}
+form{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin:80px auto;
+  width:40%;
+  border:1px solid black;
+}
+input{
+  padding:10px;
+  margin:10px;
+}
+label{
+  font:30px 'dar' ;
+  font-weight: bold;
+  color:white;
+}
+h1{
+ font:40px 'dar' ;
+ text-align: center;
+ line-height: 50px;
+ color:white;
+}
+#destacado{
+ width:20%;
+ border-radius:10px 10px 10px 10px;
+}
+#divDestacado{
+border:1px solid black;
+width:70%;
+margin:50px auto;
+background:rgba(108, 114, 114,.7);
+}
+#botones{
+display:flex;
+justify-content: flex-end;
+align-items: center;
+border:1px solid white;
+background:rgba(0,0,0,.7);
+border-top:none;
+border-left:none;
+border-right:none;
+}
+#botones a{
+border-radius:15px 10px 20px 10px;
+font:30px 'dar';
+padding:20px;
+text-decoration: none;
+color:white;
+transition: all 1s;
+}
+#botones a:hover{
+transform: translateY(-10px);
+}

@@ -1,0 +1,80 @@
+*{
+ margin:0;
+ padding:0;
+ box-sizing:border-box;
+}
+
+body{
+background-image:url(jh.jpg);
+background-size:cover;
+background-attachment:fixed;
+}
+.table{
+margin:50px auto;
+width:80%;
+background:rgb(0,0,0,.7);
+}
+table{
+ color:white;
+ width:100%;
+}
+h1{
+	color:white;
+	text-align:center;
+	margin-top:50px;
+}
+td{
+	text-align:center;
+}
+
+#add{
+ height:5vh;
+}
+
+.minecraft {
+	min-height: 5vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.intel {
+	display: flex;
+	flex-direction: column;
+}
+
+#botonProductos {
+	text-decoration: none;
+	padding: 20px 20px;
+	font-size: 1.5rem;
+	position: relative;
+	margin: 32px;
+	color:white;
+	border-radius: 40px;
+	box-shadow: 0 0 0 0 rgba rgb(145, 64, 248, 0.5), 0 0 0 0 rgba(39, 200, 255, 0.5);
+	transition: transform 0.3s ease, box shadow 0.3 ease;
+    overflow: hidden;
+}
+
+#botonProductos::after {
+	content: "";
+	width: 400px;
+	height: 400px;
+	position: absolute;
+	top: -50px;
+	left: -100px;
+	background: darkcyan;
+	background-image: linear-gradient(-225deg, #231557 0%, #44107A 29%, #ff1361 67%, #fff800 100%);
+	z-index: -1;
+	transition: transform 0.5s ease;
+}
+
+#botonProductos:hover {
+	transform: translate(0, -6px);
+	box-shadow: 10px -10px 25px 0 rgb(16, 226, 253, 0.5), -10px 10px 25px 0 rgba(183, 0, 255, 0.7);
+}
+
+.intel::after {
+	transform: rotate(150deg);
+}
+
